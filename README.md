@@ -160,8 +160,7 @@ you’ll also need to create corresponding files in your resource pack:
     ```
 - `/assets/textures/cash_$your_value$.png`
     (This is the actual texture image for your new banknote.)
-
-And also you need to make localization for your new denominations (see [here](#-change-curency-name`))
+- And also you need to make localization for your new denominations (see [here](#-change-curency-name`))
 
 ## This Datapack Follows Conventions
 
