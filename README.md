@@ -42,7 +42,7 @@ If you're an admin and want to install this datapack, simply place the zip archi
 
 You can modify player balances directly using the scoreboard:
 
-```
+```mcfunction
 /scoreboard players set $player$ ec.money $amount$      # Sets a player's balance
 /scoreboard players add @a ec.money $amount$            # Adds an amount of money to all players
 /scoreboard objectives setdisplay sidebar ec.money      # Displays balances (visible to all players)
