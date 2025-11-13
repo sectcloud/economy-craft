@@ -1,49 +1,61 @@
-# Money datapack
+# 💰 Economy Craft
 
-Этот датапак добавит в игру ~~деньги~~ клинкоины
+**A Datapack that adds a complete money system to your Minecraft world!**
 
-## Использование
+With **Economy Craft**, you can transfer money between players using physical currency or your bank account.
 
-* ### Перевод коинов
+## Using
 
-Для перевода коинов необходимо ввести 3 команды:
+### 💸 Sending Money
 
-```mcfunction
-trigger pay_id set $id$
-trigger pay_amount set $amount$
-trigger pay
-```
-Где `$id$` айди игрока получателя, а `$amount$` сумма перевода 
-
-*P.S. айди получателя будет отображаться в табе, если следовать [инструкции](#настройка) настройки датапака*
-
-* ### Банкноты
-Для получения банкноты нужно ввести команду:
+To send money, just type:
 
 ```mcfunction
-trigger banknote set $x$
+/trigger ec.pay
 ```
-Где `$x$` номинал банкноты (доступно 10, 50, 100, 200, 500 и 1000)
 
-Если встать на шифт держа в руке банкноту, то в actionbar выведится количество банкнот в инвентаре
+and follow the instructions.
 
-Для перевода всех банкнот в инвентаре в цифровой вид есть команда:
+### 💵 Withdraw and Deposit
+
+To withdraw money from your in-game bank account, use this command:
 
 ```mcfunction
-trigger banknote2digital
+/trigger ec.withdraw set $amount$
 ```
 
-## Установка
-Ну типо как обычно закинули в папку `datapacks` в папке мира и всё :+1:
+$amount$ can be any number — the datapack will give you your money.
 
-## Настройка
-Настроить датапак не сложно, достаточно вывести скорборд `money` в `sidebar` и скорборд `ID` в `list`
+For example, if you type `/trigger ec.withdraw set 19302`, you’ll get 3×5000, 4×2000, 3×100, and 2×1.
 
-### Типо так:
+___
+
+You can also do the opposite and deposit your cash into your bank account. Just type:
+
 ```mcfunction
-scoreboard objectives setdisplay sidebar money
-scoreboard objectives setdisplay list ID
+/trigger ec.deposit
 ```
 
-## Работа с другими датапаками
-Мы не гарантируем работу с другими датапаками, так как используется scoreboard с названием `ID` и возможна коллизия имён с другими датапаками
+## For Admins
+
+If you're an admin and want to install this datapack, simply place the zip archive into your world’s datapacks folder.
+
+You can modify player balances directly using the scoreboard:
+
+```
+/scoreboard players set $player$ ec.money $amount$      # Sets a player's balance
+/scoreboard players add @a ec.money $amount$            # Adds an amount of money to all players
+/scoreboard objectives setdisplay sidebar ec.money      # Displays balances (visible to all players)
+```
+
+If you want to uninstall the datapack, run this command:
+
+```
+/function sc_economycraft:uninstall
+```
+
+Then delete the datapack archive file.
+
+## This Datapack Follows Conventions
+
+You can read them [here](https://mc-datapacks.github.io/en/index.html)
