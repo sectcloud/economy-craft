@@ -6,10 +6,10 @@ With **Economy Craft**, you can transfer money between players using physical cu
 
 ## Screenshots
 
-![items](/screenshots/items.png)
-![action_bar](/screenshots/action_bar.png)
-![success_send_money](/screenshots/success_send_money.png)
-![error_example](/screenshots/error_example.png)
+<img src="screenshots/items.png" alt="items" width="100%"/>
+<img src="screenshots/action_bar.png" alt="action_bar" width="100%"/>
+<img src="screenshots/success_send_money.png" alt="success_send_money" width="100%"/>
+<img src="screenshots/error_example.png" alt="error_example" width="100%"/>
 
 ## Using
 
