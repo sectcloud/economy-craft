@@ -4,6 +4,13 @@
 
 With **Economy Craft**, you can transfer money between players using physical currency or your bank account.
 
+## Screenshots
+
+![items](/screenshots/items.png)
+![action_bar](/screenshots/action_bar.png)
+![success_send_money](/screenshots/success_send_money.png)
+![error_example](/screenshots/error_example.png)
+
 ## Using
 
 ### 💸 Sending Money
