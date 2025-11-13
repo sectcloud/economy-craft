@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Money",
+        "description": "This Datapack adds money in Minecraft.",
+        "icon": {
+            "id": "minecraft:paper"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:sect_cloud",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

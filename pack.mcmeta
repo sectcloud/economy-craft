@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 9,
-    "description": ""
+    "description": "This Datapack adds money in Minecraft.",
+    "min_format": 88,
+    "max_format": 88
   }
 }
